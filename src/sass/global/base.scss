@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  color: $color-main;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  background-color: $color-bg;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.page-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-width: toRem(360);
+  max-width: toRem(720);
+  background-color: #fff;
+}
+
+.content-bl {
+  padding: toRem(15) toRem(20) toRem(20);
+}

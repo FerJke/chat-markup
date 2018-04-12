@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chat</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- Content -->
+    <div class="content-bl">
+
+      <!-- Chat person block -->
+      <div class="chat-person">
+        <figure class="chat-person__photo">
+          <img src="img/photo.jpg" alt="Veronika Rostova">
+        </figure>
+
+        <div class="chat-person__info">
+          <p class="chat-person__title chat-person--marg-l">Вероника Ростова</p>
+          <p class="chat-person__position chat-person--marg-l">Менеджер по продажам</p>
+          <p class="chat-person__descr">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</p>
+        </div>
+      </div><!-- /. end chat person block -->
+
+      <!-- Services -->
+      <div class="services">
+        <div class="services__bl d-flex">
+          <div class="services__bl-price services__bl--total">Услуг</div>
+        </div>
+
+        <div class="services__bl services__bl--content">
+          <div class="services__bl-line d-flex">
+            <div class="services__bl-info services__bl-info--color1 services__bl-info--full">Ручное бронирование</div>
+            <div class="services__bl-price services__bl-price--bold services__bl-price--pad-r services__bl--total">11</div>
+          </div>
+          <div class="services__bl-line d-flex">
+            <div class="services__bl-info services__bl-info--color2 services__bl-info--part1">Пакетные туры</div>
+            <div class="services__bl-price services__bl-price--bold services__bl-price--pad-r services__bl--total">3</div>
+          </div>
+          <div class="services__bl-line d-flex">
+            <div class="services__bl-info services__bl-info--color2 services__bl-info--part2">Отели</div>
+            <div class="services__bl-price services__bl-price--bold services__bl-price--pad-r services__bl--total">1</div>
+          </div>
+        </div>
+
+        <div class="services__bl d-flex">
+          <div class="services__bl-info services__bl-info--total">Всего</div>
+          <div class="services__bl-price services__bl-price--bold  services__bl-price--pad-r services__bl--total">15</div>
+        </div>
+      </div><!-- /. end services -->
+
+      <!-- Reviews -->
+      <div class="reviews">
+        <div class="reviews__total d-flex">
+          <div class="reviews__total--title">Последние отзывы</div>
+          <div class="reviews__total--link"><a href="#">Все отзывы</a></div>
+          <div class="reviews__total--message"><span class="like">131</span><span class="message">14</span></div>
+        </div>
+
+        <div class="reviews__content">
+          <p class="reviews__content-title"><span class="username">Самуил</span><span class="date">13 октября 2011</span></p>
+          <p class="reviews__content-txt">Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+        </div>
+
+        <div class="reviews__content">
+          <p class="reviews__content-title"><span class="username">Лилия Семёновна</span><span class="date">14 октября 2011</span></p>
+          <p class="reviews__content-txt">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</p>
+        </div>
+
+        <div class="reviews__content">
+          <p class="reviews__content-title"><span class="username">Лилия Семёновна</span><span class="date">14 октября 2011</span></p>
+          <p class="reviews__content-txt">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+        </div>
+      </div><!-- /. end reviews -->
+
+    </div><!-- /. end content -->
+
+    <!-- Question form -->
+    <form class="question-form" action="/" metod="post" name="question" id="form">
+      <textarea name="message" rows="3"></textarea>
+      <button class="question-form__send" type="submit">Написать консультанту</button>
+    </form><!-- /. end question form -->
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

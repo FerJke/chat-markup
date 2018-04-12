@@ -1,0 +1,54 @@
+.chat-person {
+  position: relative;
+  min-height: toRem(120);
+  line-height: 1;
+
+  &__photo {
+    z-index: 10;
+    position: absolute;
+    margin: 0;
+    width: toRem(120);
+    height: toRem(120);
+    border-radius: 50%;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: toRem(-20);
+      left: toRem(-65);
+      max-width: inherit;
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: toRem(8);
+    padding-top: toRem(10);
+    font-size: toRem(16);
+    font-weight: bold;
+  }
+
+  &__position {
+    margin: 0;
+    margin-bottom: toRem(6);
+    color: #808080;
+    font-size: toRem(12);
+  }
+
+  &__descr {
+    margin: 0;
+    margin-left: toRem(60);
+    padding: toRem(10) toRem(15) toRem(7) toRem(70);
+    font-size: toRem(14);
+    line-height: 1.4;
+    background-color: #fffbc8;
+    border: 1px solid #cecabf;
+    border-radius: toRem(4);
+  }
+
+  &--marg-l {
+    margin-left: toRem(130);
+  }
+
+}
